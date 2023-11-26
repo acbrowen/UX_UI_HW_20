@@ -2,6 +2,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
 
 <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
 <link rel="stylesheet" href="css/index.css">
@@ -9,32 +14,212 @@
     <title>UX/UI Homework 20</title>
 </head>
 <body>
-    <p>Hello World</p>
-    <!---SECTION 1: Navigation [using NAV / COLS XXXX]-->
+    <!---SECTION 1: Navigation [using NAV - see below, enclosed beneath Jumbotron]-->
 
+    <!---SECTION 2: Introduction [using JUMBOTRON]-->
+    <div class="jumbotron">
+        <h1 class="display-4">Site Redesign | LGBT+ Outdoors</h1>
+        <p class="lead">a usability makeover for a nonprofit's website</p>
+        <p>In the course of our UX/UI bootcamp, my team and I undertook a challenge to redesign a website for a nonprofit organization. We chose to work with LGBT+ Outdoors, an organization formed to promote participation in outdoor activities for the queer community, a space which many community members have experienced as unwelcoming, hostile, or dangerous.
+            To better understand how to serve our users, we focused on how to improve the site's usability, specifically serving the goal of increasing participation in local chapter activities.</p>
+        <hr class="my-4">
+        <p class="jumbotronDetail">Role: UX/UI Designer</p>
+        <p class="jumbotronDetail">Timeline: 3 weeks</p>
+        <p class="jumbotronDetail">Tools: Figma, FigJam, Visme, StarryAI, Cockatoo</p>
+        
+    <!---SECTION 1 nav begins here-->
+        <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#researchSection">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#problemStatementSection">Problem Statement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iterationSection">Iteration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#prototypeSection">Prototype</a>
+            </li>
+          </ul>
+    </div>
+    <div id="intro">
+        <p>
+        </p>
+    </div>
+    
+    <!---SECTION 3: Research [using both CARDS and COLS]-->
+    <section id="researchSection">
+        <div class="container px-lg-5" id="protoPersonaDiv">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5">
+                    <img src="images/LGBTOutdoors | Proto Persona.png">
+                </div>
+                <div class="col py-3 px-lg-5 border bg-light">
+                    <p>We began our case study by defining the user base we were targeting with a proto persona.</p>
+                    <p>Enter Raine Brown! Raine is a genderqueer individual whose interests and needs would lead them to outdoorsy activities, in search of a need for supportive community.</p> 
+                </div>
+            </div>
+        </div>
+        <div class="container px-lg-5" id="methodologyDiv">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light">
+                    <p>In order to clarify the needs and pain points of our users, we developed and distributed a survey to 23 participants, and interviewed 5 members of the LGBTQ+ community. Below, a few key insights that we gleaned from our survey data:</p>
+                </div>
+                <div class="col py-3 px-lg-5">
+                    <img src="images/LGBTOutdoors | Methodology.png">
+                </div>
+            </div>
+        </div>
+    <div class="flexContainer2">
+        <div class="card flexChild2" id="survey1" style="width: 18rem;">
+            <img src="images/LGBTOutdoors | Survey 1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Survey Insight A >></h5>
+                <p class="card-text">>> Out of all of our outdoor activities on offer, our users collectively enjoy hiking, camping, and kayaking most. These activities would make the best targets for featured imagery on the site to inspire engagement.</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card flexChild2" id="survey2" style="width: 18rem;">
+            <img src="images/LGBTOutdoors | Survey 2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Survey Insight B >>
+                </h5>
+                <p class="card-text">>> Users clearly prioritized which pieces of information would be most essential to determining which activities they'd like to join. We need to display these details in an immediately accessible location for each activity on the schedule.</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card flexChild2" id="survey3" style="width: 18rem;">
+            <img src="images/LGBTOutdoors | Survey 3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Survey Insight C >></h5>
+                <p class="card-text">>> Harassment has occurred during many of our users' most valued outdoor activities. This aligns with the mission of our organization. These data confirm the value that our organization can bring to its users!</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="container px-lg-5" id="affinityDiv">
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5 border bg-light">
+                <p>We generated an affinity diagram with observations from our user interviews, yielding a neatly detailed bundle of specific insights. Our main take-home points, however, may be simply summarized.</p>
+                <p> Our users are seeking…</p>
+                <p>    ❖  information that’s organized and easy to find</p> 
+                <p>    ❖  more humanized elements, like stories & pictures</p>
+                <p>    ❖  sensory elements of connection with nature</p>
+            </div>
+            <div class="col py-3 px-lg-5">
+                <img src="images/LGBTOutdoors | Affinity Diagram - Unsorted.png">
+            </div>
+        </div>
+    </div>
+    <!---<div class="affinityDiagram flexContainer3">
+        <div class="flexChild3">
+            <p>We generated an affinity diagram with observations from our user interviews, yielding a neatly detailed bundle of specific insights. Our main take-home points, however, may be simply summarized.</p>
+            <p> Our users are seeking…</p>
+            <p>    ❖  information that’s organized and easy to find</p> 
+            <p>    ❖  more humanized elements, like stories & pictures</p>
+            <p>    ❖  sensory elements of connection with nature</p>
+        </div>
+        <div class="flexChild3"><img src="images/LGBTOutdoors | Affinity Diagram - Unsorted.png"></div>
+    </div>--->
+    <div class="container">
+        <div class="row">
+          <div class="col align-self-start">
+            <img src="images/LGBTOutdoors | Affinity Diagram - 1.png">
+          </div>
+          <div class="col align-self-center">
+            <img src="images/LGBTOutdoors | Affinity Diagram - 2.png">
+          </div>
+          <div class="col align-self-end">
+            <img src="images/LGBTOutdoors | Affinity Diagram - 3.png">
+          </div>
+        </div>
+    </div>
+    <div class="container px-lg-5">
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5">
+                <img src="images/LGBTOutdoors | Competitor Analysis.png ">
+            </div>
+            <div class="col py-3 px-lg-5 border bg-light">
+                <p>Finally, we conducted a competitor analysis to identify advantageous strategies from similar organizations. </p>
+                <p>The website for Brave Trails evoked strong emotions with their person-centered visuals, and inclusion of expressive videos over static images.</p> 
+                <p>Diversify Outdoors similarly played on striking visuals, with a greater emphasis on powerful imagery of nature. That said, the organization of information could at times crowd the main page with an excess of information, when it could be better relegated to a secondary page. We wanted to be particularly conscious of this pitfall, as this was a primary weakness of our organization's site before proposed modifications.</p>            
+            </div>
+        </div>
+    </div>
+    </section>
 
+    <!---SECTION 4: Problem Statement [using JUMBOTRON]-->
+    <section id="problemStatementSection">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Problem Statement</h1>
+              <p class="lead">LGBT+ Outdoors was designed to connect members of the community to each other and to nature. We’ve observed that their website isn’t optimized for communicating necessary information and resources. This prevents potential participants from partaking in trips, clinics, and workshops that would allow for safe, queer-positive community building.</p>
+              <p>How might we improve the LGBT+ Outdoors website so that we draw in members of the queer community and ensure they have a more inclusive and immersive outdoor experience within nature?</p>
+            </div>
+          </div>
+    </section>
 
-    <!---SECTION 2: Introduction [using JUMBOTRON / COLS XXXX]-->
+    <!---SECTION 5: Iteration [using LIST GROUP]-->
 
+    <section id="iterationSection">
 
-
-    <!---SECTION 3: Research [using CARD / LIST GROUP / COLLAPSE / COLS XXXX]-->
-
-
-
-    <!---SECTION 4: Problem Statement [using JUMBOTRON / COLS XXXX]-->
-
-
-
-    <!---SECTION 5: Iteration [using CARD / LIST GROUP / COLLAPSE / MEDIA OBJECT / COLS XXXX]-->
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            <h2>Feedback</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">● Font size too large</li>
+                <li class="list-group-item">● Website is text heavy</li>
+                <li class="list-group-item">● Font style not the most legible (esp. capitalized)</li>
+                <li class="list-group-item">● Unable to navigate using header menu</li>
+                <li class="list-group-item">● Unable to filter for events</li>
+                <li class="list-group-item">● Unable to view events</li>
+                <li class="list-group-item">● Unable to register for events</li>
+                <li class="list-group-item">● Did not know website continues vertically once you scroll</li>
+                <li class="list-group-item">● Visuals are most pleasant</li>
+                <li class="list-group-item">● Real-time photos and videos are incentive to attend an event/donate</li>
+                <li class="list-group-item">● Hero image uses a lot of real estate</li>
+            </ul>
+            </div>
+          <div class="col-sm">
+            <h2>Iterative Changes</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">● Made font size smaller</li>
+                <li class="list-group-item">● Changed font style(s)</li>
+                <li class="list-group-item">● Hid lengthy text</li>
+                <li class="list-group-item">● Made header navigation clickable</li>
+                <li class="list-group-item">● Fixed dead ends</li>
+                <li class="list-group-item">● Fixed filter function</li>
+                <li class="list-group-item">● Created flow for ‘view events’ and ‘register for’ events</li>
+                <li class="list-group-item">● Made hero smaller so content is visible initially</li>
+                <li class="list-group-item">● Added photos and videos from past events</li>
+            </ul>
+          </div>
+          <div class="col-sm border bg-light">
+            Based on several rounds of user testing, there were several functional features that users wanted to make use of that would need to be introduced. We adjusted the functionality of several elements. Next, we addressed a primary design concern: proportion. 
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!---SECTION 6: Prototype [using COL]-->
-
-
-
-
+    <section id="prototypeSection">
+        <div class="container" id="prototypeDiv">
+            <div class="row align-items-center justify-content-start">
+              <div class="col" id="videoHolder">
+                <!---<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7Wj3PyCktfFDkreTla3cbc%2FACB-%257C-Case-Study-%257C-LGBTOutdoors%3Ftype%3Ddesign%26node-id%3D501%253A6880%26mode%3Ddesign%26t%3D3OnWStfStFXpoDlj-1" allowfullscreen></iframe>--->
+                <!---<video width="1440" height="900" controls>--->
+                <video width="960" height="600" autoplay loop>
+                    <source src="images/LGBTOutdoors | Prototype A.mp4" type=video/mp4>
+                </video>
+              </div>
+              <div class="col">
+                <p id="prototypeText">Developing our first pass at the website design without an eye on the prototype view caused an oversight of gargantuan proportion: literally! Everything was enlarged relative to the window in which it would be displayed. Keeping an eye on this throughout the design process would save a round of iterative overhaul.</p>
+              </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

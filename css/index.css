@@ -1,0 +1,123 @@
+p{
+    font-family: 'Jura', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
+}
+
+.jumbotron{
+    background-image: url("../images/LGBTOutdoors\ |\ Gradient\ 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.nav{
+    margin-top: 50px;
+}
+
+/*.jumbotronDetail{
+    color: white;
+}*/
+
+#researchSection{
+    margin-bottom: 50px;
+}
+#protoPersonaDiv{
+    background-color: white;
+    margin: 100px auto;
+}
+
+#affinityDiv{
+    background-color: white;
+    margin: 100px auto;
+}
+
+.flexContainer1{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding: 50px;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.flexChild1{
+    width: 45%;
+}
+
+#methodologyText{
+    margin-left: 200px;
+}
+
+.flexContainer2{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.flexChild2{
+    width: 33%;
+    background-color: white;
+}
+
+.flexContainer3{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding: 50px;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.flexChild3{
+    width: 45%;
+}
+
+.flexContainer4{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding: 50px;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.flexChild4{
+    width: 45%;
+}
+
+.card-img-top{
+    
+}
+
+
+#iterationSection{
+    padding: 100px;
+}
+#prototypeSection{
+    /*margin-top: 200px;*/
+    background-color: black;
+}
+#prototypeDiv{
+    background-color: black;
+    /*margin-top: 150px;*/
+}
+
+#videoHolder{
+    background-color: black;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+#prototypeText{
+    color: white;
+}
+
+video{
+    margin: 100px auto;
+}
+
+a{
+    color: white;
+}
